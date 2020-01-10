@@ -1,0 +1,168 @@
+/*///////////////////////////////////////////////////*/
+/* nav change color & underbar Animation & logo fixed*/
+/*///////////////////////////////////////////////////*/
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+#nav-menu .nav-menu a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-menu a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+
+.nav-menu a:hover::after {
+    transform: scale(1, 1);
+}
+
+.nav-menu a:hover,.nav-menu a:focus {
+    color: #008091;
+}
+
+
+.section-title h2 {
+    font-size: 2rem;
+}
+
+.header-content .list-social li i {
+    font-size: 30px;
+}
+
+.position-adjustment {
+    margin-top: 70px;
+}
+
+#about {
+    padding-top: 90px;
+}
+
+/*////////////////////////////////////////////////////*/
+/* profile color changes                              */
+/*////////////////////////////////////////////////////*/
+#about .div-img-bg {
+    border: 20px solid rgb(123, 233, 227);
+}
+
+.bdr {
+    border-radius: 15px;
+}
+
+.bgc-orange {
+    background-color: rgb(235, 188, 118);
+}
+
+/*////////////////////////////////////////////////////*/
+/* skill color changes                                */
+/*////////////////////////////////////////////////////*/
+.services-carousel .owl-dot.active{
+    background-color: #008091;
+}
+
+/*////////////////////////////////////////////////////*/
+/* portpholio bdr & color changes                     */
+/*////////////////////////////////////////////////////*/
+
+div .bdr-a {
+    border-radius: 115% 85% 19% 81% / 87% 23% 77% 13%  ; 
+}
+
+div .bdr-b {
+    border-radius: 93% 7% 36% 64% / 13% 83% 17% 87%   ; 
+}
+
+div .bdr-c {
+    border-radius: 66% 34% 100% 0% / 13% 23% 77% 87%   ; 
+}
+
+div .bdr-d {
+    border-radius: 82% 18% 85% 15% / 82% 83% 17% 18%   ; 
+}
+
+#portfolio .portfolio-list .nav li.filter-active,
+#portfolio .portfolio-list .nav li:hover,
+.services-block i {
+    color: #008091;
+}
+
+
+#portfolio li  {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#portfolio li::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+
+#portfolio li:hover::after {
+    transform: scale(1, 1);
+}
+/*///////////////////////////////////////////////////*/
+/* gaogaoreport bdr chenges                          */
+/*///////////////////////////////////////////////////*/
+div .bdr-e{
+    border-radius: 90% 10% 90% 10% / 19% 79% 21% 81% ;
+}
+/*///////////////////////////////////////////////////*/
+/* Contact form layout fixed                         */
+/*///////////////////////////////////////////////////*/
+
+#formWrapper {
+    margin: 0 auto;
+}
+
+.mb-30 {
+    text-align: center;
+}
+/*///////////////////////////////////////////////////*/
+/* section stlye & MarkerAnimation changes           */
+/*///////////////////////////////////////////////////*/
+.marker-animation.markeractive{
+    background-position: -100% .5em;
+}
+    
+.marker-animation {
+    background-image: -webkit-linear-gradient(left, transparent 50%, rgb(245, 167, 255) 65%);
+    background-image: -moz-linear-gradient(left, transparent 50%, rgb(245, 167, 255) 65%);
+    background-image: -ms-linear-gradient(left, transparent 50%, rgb(245, 167, 255) 65%);
+    background-image: -o-linear-gradient(left, transparent 50%, rgb(245, 167, 255) 65%);
+    background-image: linear-gradient(left, transparent 50%, rgb(245, 167, 255) 65%);
+    background-repeat: repeat-x;
+    background-size: 200% .8em;
+    background-position: 0 .5em;
+    transition: all 2s ease;
+    font-weight: bold;
+}
+
+.fadeIn-animation {
+    opacity:0;
+}
+
+.fadeIn-animation.fadeInactive {
+    opacity: 1;
+    transition:4s;
+}
